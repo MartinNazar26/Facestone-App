@@ -2,11 +2,7 @@
   <div class="d-flex justify-content-center h-100">
     <div class="card">
       <div class="card-header">
-        <h3>DM - Login</h3>
-        <img
-          src="https://www.cocomotos.com.uy/IMG/Facestone/fs.png"
-          alt="Logo Facestone"
-        />
+        <h1 id="facestone-h1">FACE & STONES</h1>
       </div>
       <form [formGroup]="loginGroup" class="card-body">
         <div class="input-group form-group">
@@ -14,10 +10,10 @@
             <span class="input-group-text"><i class="fas fa-user"></i></span>
           </div>
           <input
-            type="email"
+            type="text"
             class="form-control"
-            placeholder="Email"
-            formControlName="email"
+            placeholder="Usuario"
+            formControlName="usuario"
           />
         </div>
         <div class="input-group form-group">
@@ -30,6 +26,15 @@
             placeholder="Contraseña"
             formControlName="password"
           />
+        </div>
+        <div class="input-group form-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text"><i class="fas fa-dice"></i></span>
+          </div>
+          <select class="form-select" placeholder="Rol" formSelectName="rol">
+            <option value="admin" selected>Facestone Master</option>
+            <option value="player">Facestone Player</option>
+          </select>
         </div>
         <div class="form-group">
           <input

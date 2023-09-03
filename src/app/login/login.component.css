@@ -1,3 +1,5 @@
+@import url('https://www.fontspace.com/dragonlord-font-f86336');
+
 .container-fluid {
   width: 100vw;
   height: 100vh;
@@ -12,7 +14,7 @@
 }
 
 .card {
-  height: 370px;
+  height: 400px;
   margin-top: auto;
   margin-bottom: auto;
   width: 400px;
@@ -22,6 +24,13 @@
 
 .card-header {
   border-bottom: 1px solid #ffc312;
+}
+
+#facestone-h1 {
+  text-align: center;
+  font-family: 'DRAGON HUNTER', sans-serif;
+  color: white;
+  font-size: 2rem;
 }
 
 .card-header h3 {
@@ -44,17 +53,6 @@
 input:focus {
   outline: 0 0 0 0 !important;
   box-shadow: 0 0 0 0 !important;
-}
-
-.remember {
-  color: white;
-}
-
-.remember input {
-  width: 20px;
-  height: 20px;
-  margin-left: 15px;
-  margin-right: 5px;
 }
 
 .login_btn {
@@ -82,4 +80,8 @@ input:focus {
 .links a {
   margin-left: 4px;
   color: #ffc312;
+}
+
+select {
+  color: black;
 }
