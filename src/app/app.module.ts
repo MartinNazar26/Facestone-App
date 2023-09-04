@@ -5,6 +5,7 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
@@ -20,13 +21,19 @@ import { HttpClientModule } from '@angular/common/http';
       [
         { path: '', component: LoginComponent },
         { path: 'dashboard', component: DashboardComponent },
+        { path: 'register', component: RegisterComponent },
       ],
       {
         onSameUrlNavigation: 'reload',
       }
     ),
   ],
-  declarations: [AppComponent, DashboardComponent, LoginComponent],
+  declarations: [
+    AppComponent,
+    DashboardComponent,
+    LoginComponent,
+    RegisterComponent,
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

@@ -1,0 +1,69 @@
+<div class="container-fluid">
+  <div class="d-flex justify-content-center h-100">
+    <div class="card">
+      <div class="card-header">
+        <h3>Registro</h3>
+        <img
+          src="https://proyectoam.herokuapp.com/imagenes/Logo3.png"
+          alt="Logo TryNing App"
+        />
+      </div>
+      <form
+        [formGroup]="registerGroup"
+        (ngSubmit)="formSubmit()"
+        class="card-body"
+      >
+        <div class="input-group form-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text"
+              ><i class="fas fa-envelope"></i
+            ></span>
+          </div>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Usuario"
+            formControlName="usuario"
+          />
+        </div>
+        <div class="input-group form-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text"><i class="fas fa-key"></i></span>
+          </div>
+          <input
+            type="password"
+            class="form-control"
+            placeholder="Contraseña"
+            formControlName="password"
+          />
+        </div>
+        <div class="input-group form-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text"><i class="fas fa-key"></i></span>
+          </div>
+          <input
+            type="password"
+            class="form-control"
+            placeholder="Confirmar contraseña"
+            formControlName="confirmPassword"
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="submit"
+            value="Registrarse"
+            class="btn float-right register_btn"
+          />
+        </div>
+        <div class="form-group">
+          <p *ngIf="errorMsg" class="text-danger">{{ errorMsg }}</p>
+        </div>
+      </form>
+      <div class="card-footer">
+        <div class="d-flex justify-content-center links">
+          ¿Ya tienes una cuenta?<a [routerLink]="['/']">Login</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
