@@ -20,7 +20,6 @@ export class LoginComponent implements OnInit {
     this.loginGroup = this.formBuilder.group({
       usuario: '',
       password: '',
-      rol: '',
     });
   }
 
@@ -28,12 +27,11 @@ export class LoginComponent implements OnInit {
 
   formSubmit() {
     this.errorMsg = '';
-    const { usuario, password, rol } = this.loginGroup.value as {
+    const { usuario, password } = this.loginGroup.value as {
       usuario: string;
       password: string;
-      rol: string;
     };
-    this.userService.login(usuario, password, rol).subscribe(
+    this.userService.login(usuario, password).subscribe(
       (user) => {
         this.userService.setUser(user);
         this.router.navigate(['/dashboard']);

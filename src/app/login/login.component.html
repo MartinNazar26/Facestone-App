@@ -4,7 +4,11 @@
       <div class="card-header">
         <h1 id="facestone-h1">FACE & STONES</h1>
       </div>
-      <form [formGroup]="loginGroup" class="card-body">
+      <form
+        [formGroup]="loginGroup"
+        class="card-body"
+        (ngSubmit)="formSubmit()"
+      >
         <div class="input-group form-group">
           <div class="input-group-prepend">
             <span class="input-group-text"><i class="fas fa-user"></i></span>

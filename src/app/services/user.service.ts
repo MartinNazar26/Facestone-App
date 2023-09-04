@@ -29,11 +29,11 @@ export class UserService {
 
   constructor(private http: HttpClient) {}
 
-  login(usuario: string, password: string, tipo: string) {
+  login(usuario: string, password: string) {
     const headers = {
       'Content-type': 'application/json',
     };
-    const body = JSON.stringify({ user: usuario, pass: password, tipo: tipo });
+    const body = JSON.stringify({ user: usuario, pass: password });
     return this.http.post(
       'https://facestone_api-1-m4348603.deta.app/login',
       body,
