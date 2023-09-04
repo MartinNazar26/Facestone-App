@@ -29,14 +29,18 @@ export class UserService {
 
   constructor(private http: HttpClient) {}
 
-  login(user: string, password: string, tipo: string) {
+  login(usuario: string, password: string, tipo: string) {
     const headers = {
       'Content-type': 'application/json',
     };
-    const body = JSON.stringify({ user: user, pass: password, tipo: tipo });
-    return this.http.post('https://proyectoam.herokuapp.com/login', body, {
-      headers,
-    });
+    const body = JSON.stringify({ user: usuario, pass: password, tipo: tipo });
+    return this.http.post(
+      'https://facestone_api-1-m4348603.deta.app/login',
+      body,
+      {
+        headers,
+      }
+    );
   }
 
   register(user: any, password: string) {
@@ -46,8 +50,12 @@ export class UserService {
       pass: password,
       tipo: 'PLAYER',
     });
-    return this.http.post('https://proyectoam.herokuapp.com/usuarios', body, {
-      headers,
-    });
+    return this.http.post(
+      'https://facestone_api-1-m4348603.deta.app/usuarios',
+      body,
+      {
+        headers,
+      }
+    );
   }
 }
