@@ -6,13 +6,22 @@ import { HttpClient } from '@angular/common/http';
 })
 export class UserService {
   user: any;
+  users: any[] = [];
 
   setUser(user: any) {
     this.user = user;
   }
 
+  setUsuarios(users: any) {
+    this.users = users;
+  }
+
   getUserType() {
     return this.user?.type;
+  }
+
+  getUserActive() {
+    return this.user?.activo;
   }
 
   getUserId() {
@@ -48,7 +57,8 @@ export class UserService {
     const body = JSON.stringify({
       user: user,
       pass: password,
-      tipo: 'PLAYER',
+      type: 'PLAYER',
+      activo: 'N',
     });
     return this.http.post(
       'https://facestone_api-1-m4348603.deta.app/usuarios',
@@ -57,5 +67,12 @@ export class UserService {
         headers,
       }
     );
+  }
+
+  obtenerUsuarios() {
+    const headers = { 'Content-type': 'application/json' };
+    return this.http.get('https://facestone_api-1-m4348603.deta.app/usuarios', {
+      headers,
+    });
   }
 }

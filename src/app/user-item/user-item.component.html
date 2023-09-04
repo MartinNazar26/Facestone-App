@@ -1,0 +1,21 @@
+<div
+  *ngIf="usuario"
+  class="card"
+  [ngStyle]="{
+    'background-color':
+      'linear-gradient(
+    to bottom right,
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.7),
+    rgba(255, 255, 255, 0.6)
+  )'
+  }"
+>
+  <h1>{{ usuario.usuario }}</h1>
+  <div class="card-body">
+    <p>
+      Tipo: {{ usuario.type }} <br />
+      Activo: {{ usuario.activo }}
+    </p>
+  </div>
+</div>

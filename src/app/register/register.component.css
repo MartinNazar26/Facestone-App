@@ -2,9 +2,13 @@
   width: 100vw;
   height: 100vh;
   background-repeat: no-repeat;
-  background-size: cover;
-  background-image: linear-gradient(rgba(255, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url('https://proyectoam.herokuapp.com/imagenes/gym3.jpg');
+  background-size: 100vw 100vh;
+  background-position: center;
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url('https://www.cocomotos.com.uy/IMG/Facestone/MapaVersion5.png');
 }
 
 .card {
@@ -19,14 +23,11 @@
   border-bottom: 1px solid #ffc312;
 }
 
-.card-header h3 {
+#facestone-h1 {
+  text-align: center;
+  font-family: 'DRAGON HUNTER', sans-serif;
   color: white;
-  display: inline-block;
-}
-
-.card-header img {
-  width: 80px;
-  float: right;
+  font-size: 2rem;
 }
 
 .input-group-prepend span {
@@ -41,24 +42,14 @@ input:focus {
   box-shadow: 0 0 0 0 !important;
 }
 
-.remember {
-  color: white;
-}
-
-.remember input {
-  width: 20px;
-  height: 20px;
-  margin-left: 15px;
-  margin-right: 5px;
-}
-
 .register_btn {
   color: transparent;
   background-color: #ffc312;
   width: 70px;
   height: 70px;
   border-radius: 20px;
-  background-image: url('https://proyectoam.herokuapp.com/imagenes/arrow-front.png');
+  background-image: url('https://www.cocomotos.com.uy/IMG/Facestone/arrow.png');
+  transform: scaleX(-1);
   background-size: contain;
 }
 

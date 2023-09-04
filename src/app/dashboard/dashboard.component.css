@@ -1,0 +1,56 @@
+.container-fluid {
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  background-position: center;
+  background-image: linear-gradient(
+      rgba(0, 38, 255, 0.7),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url('https://www.cocomotos.com.uy/IMG/Facestone/MapaVersion5.png');
+}
+
+.row:first-child {
+  color: white;
+  margin-top: 0px;
+  border-bottom: 1px solid white;
+  text-align: center;
+  font-family: 'DRAGON HUNTER', sans-serif;
+  font-size: 2rem;
+}
+
+.row div {
+  height: fit-content;
+  margin-top: 3%;
+}
+
+h1 {
+  font-size: 1.8rem;
+}
+
+img {
+  width: 150px;
+  height: 105px;
+  float: right;
+}
+
+.row {
+  margin-top: 50px;
+}
+
+.back-black {
+  background-color: rgba(0, 0, 0, 0.7) !important;
+  padding: 2%;
+  height: 510px;
+}
+
+#logOut button {
+  background-image: url('https://www.cocomotos.com.uy/IMG/Facestone/Out.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 30px;
+  width: 30px;
+  padding: 0;
+}

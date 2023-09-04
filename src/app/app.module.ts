@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { UsersListComponent } from './users-list/users-list.component';
+import { UserItemComponent } from './user-item/user-item.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
@@ -33,6 +35,8 @@ import { HttpClientModule } from '@angular/common/http';
     DashboardComponent,
     LoginComponent,
     RegisterComponent,
+    UsersListComponent,
+    UserItemComponent,
   ],
   bootstrap: [AppComponent],
 })

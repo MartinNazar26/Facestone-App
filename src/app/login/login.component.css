@@ -1,5 +1,3 @@
-@import url('https://www.fontspace.com/dragonlord-font-f86336');
-
 .container-fluid {
   width: 100vw;
   height: 100vh;
@@ -14,7 +12,6 @@
 }
 
 .card {
-  height: 400px;
   margin-top: auto;
   margin-bottom: auto;
   width: 400px;
@@ -31,16 +28,6 @@
   font-family: 'DRAGON HUNTER', sans-serif;
   color: white;
   font-size: 2rem;
-}
-
-.card-header h3 {
-  color: white;
-  display: inline-block;
-}
-
-.card-header img {
-  width: 80px;
-  float: right;
 }
 
 .input-group-prepend span {
@@ -61,7 +48,8 @@ input:focus {
   width: 70px;
   height: 70px;
   border-radius: 20px;
-  background-image: url('https://proyectoam.herokuapp.com/imagenes/arrow-front.png');
+  background-image: url('https://www.cocomotos.com.uy/IMG/Facestone/arrow.png');
+  transform: scaleX(-1);
   background-size: contain;
 }
 
@@ -71,6 +59,8 @@ input:focus {
 
 .card-footer {
   border-top: 1px solid #ffc312;
+  padding: 10px;
+  font-size: 1.2rem;
 }
 
 .links {

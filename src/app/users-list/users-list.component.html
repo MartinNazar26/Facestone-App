@@ -1,0 +1,14 @@
+<div *ngIf="usuarios" class="container-fluid card">
+  <div class="card-header">
+    <h1>Centros deportivos</h1>
+  </div>
+  <div class="card-body">
+    <div class="row">
+      <app-user-item
+        class="col-12"
+        *ngFor="let usuario of usuarios"
+        [usuario]="usuario"
+      ></app-user-item>
+    </div>
+  </div>
+</div>
